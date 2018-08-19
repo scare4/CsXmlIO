@@ -15,7 +15,6 @@ namespace XmlIO
             {
                 XmlSerializer Serializer = new XmlSerializer(typeof(List<T>), new XmlRootAttribute("product_list"));
                 Serializer.Serialize(Writer, list);
-                Writer.Close();
             }
         }
 
